@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <style>
+      @font-face {
+          font-family: canaro-bold;
+          src: url(fonts/canaro_bold/CanaroW00-Bold.eot);
+          src: url(fonts/canaro_bold/CanaroW00-Bold.woff) format("woff"), url(fonts/canaro_bold/CanaroW00-Bold.ttf) format("truetype"), url(fonts/canaro_bold/CanaroW00-Bold.svg) format("svg")
+      }
+
+      @font-face {
+          font-family: canaro-medium;
+          src: url(fonts/canaro_medium/CanaroW00-Medium.eot);
+          src: url(fonts/canaro_medium/CanaroW00-Medium.woff) format("woff"), url(fonts/canaro_medium/CanaroW00-Medium.ttf) format("truetype"), url(fonts/canaro_medium/CanaroW00-Medium.svg) format("svg")
+      }
+
+      @font-face {
+          font-family: canaro-light;
+          src: url(fonts/canaro_light/CanaroW00-Light.eot);
+          src: url(fonts/canaro_light/CanaroW00-Light.woff) format("woff"), url(fonts/canaro_light/CanaroW00-Light.ttf) format("truetype"), url(fonts/canaro_light/CanaroW00-Light.svg) format("svg") 
+      }
+
+      body {
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      div.inline { float:left; }
+      .clearBoth { clear:both; }
+
+      a {
+        color: #000000
+      }
+
+      h1, h2, h3, p {
+        text-align: center;
+      }
+
+      .MxmButton {
+          font-family: canaro-bold;
+          font-weight: 900;
+          font-size: 1em;
+          color: #f4224b;
+          text-transform: uppercase;
+          outline: 0;
+          border-radius: 50px;
+          padding: .5em 2.5em .5em 2.5em;
+          background-color: #ffd008;
+          border: none;
+          transition-duration: .2s;
+          box-shadow: 0 5px #f4224b;
+          margin-top: 0;
+          margin-bottom: 0
+      }
+
+      .MxmButton:hover {
+          cursor: pointer;
+          background-color: #e3bd1b;
+          transform: translateY(2.5px);
+          box-shadow: 0 2.5px #f4224b
+      }
+    </style>
+
+    <title> MAXIMA 2020 API - Server 01 </title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MAXIMA 2020 Official API</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+              <a class="nav-link" href="https://maxima.umn.ac.id"> MAXIMA Home Page </a>
+          </span>
+        </div>
+      </nav>
+    </div> 
+    <!-- end of header -->
+    <div class="container-fluid col-md-12">
+      <div class="row">
+        <div class="col-md-1"> </div>
+        <div class="col-md-5">
+          <br>
+          <h1> MAXIMA 2020 API </h1>
+          <h2> Server 01 </h2>
+          <h3 class="cover-heading"> v. 1.5.1 - Updated 24/09/2020 </h3>
+          <br> <br>
+          <p class="lead">Welcome to MAXIMA 2020 API. Thank you for visiting, but actually this website powers the amazing features of MAXIMA. If you are redirected here by mistake, please contact MAXIMA through one of these official accounts. </p>
+          <br>
+          <p class="lead">
+            <a href="https://lin.ee/fV5PZKk" class="MxmButton btn btn-lg btn-secondary"> LINE MAXIMA 2020 </a> <br> <br>
+            <a href="https://www.instagram.com/maximaumn/" class="MxmButton btn btn-lg btn-secondary"> Instagram MAXIMA 2020 </a>
+          </p>
+        </div>
+        <div class="img-responsive col-md-5">
+          <img src="pr_website.jpg" width="100%" height="100%">
+        </div>
+        <div class="col-md-1"> </div>
+      </div>
+    </div>
+    <footer class="container col-md-12 mx-auto" style="justify-content: center;">
+      <p> Hosted on <a href="https://www.digitalocean.com">DigitalOcean</a> Cloud Computing Platform</p>
+      <p> Coded with <i class="fas fa-heart"></i> in Indonesia - Powered by MAXIMA 2020 Web Development Team </p>
+    </footer>
+  </body>
+</html>
